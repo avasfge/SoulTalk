@@ -1,0 +1,197 @@
+/* Основні стилі для сторінки товару */
+
+/* Основні налаштування документа */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, white, #e6f0f9);
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для обмеження ширини контенту */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Стилі для хедера */
+header {
+  padding: 1rem 0;
+  background-color: white;
+  border-bottom: 1px solid #cce0f3;
+}
+
+/* Стилі для футера */
+footer {
+  padding: 1rem 0;
+  background-color: white;
+  border-top: 1px solid #cce0f3;
+  text-align: center;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Стилі для основного контенту */
+main {
+  flex-grow: 1;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стилі для картки товару */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #cce0f3;
+  max-width: 64rem;
+  width: 100%;
+}
+
+/* Стилі для контейнера продукту */
+.product-container {
+  padding: 1rem;
+}
+
+/* Стилі для кнопки */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  width: 80%;
+  background-color: #16a34a;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #15803d;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+/* Стилі для зображення товару */
+.product-image-container {
+  aspect-ratio: 1 / 1;
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стилі для тексту */
+.product-code {
+  color: #2980b9;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  color: #1e293b;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.product-description {
+  color: #4b5563;
+  margin: 1rem 0;
+}
+
+.product-stock {
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.out-of-stock {
+  color: #dc2626;
+}
+
+/* Медіа-запити для адаптивного дизайну */
+@media (min-width: 768px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Утиліти для флексу */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Утиліти для тексту */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-primary-900 {
+  color: #1e293b;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-primary-600 {
+  color: #2980b9;
+}
+
+/* Утиліти для переходів */
+.transition-colors {
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:text-primary-900:hover {
+  color: #1e293b;
+}
