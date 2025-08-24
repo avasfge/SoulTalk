@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoulTalk - Онлайн клініка психології</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Roboto', sans-serif; background: #f9fafb; }
+  section { padding: 4rem 1rem; }
+  h1,h2,h3,h4 { color: #1e40af; }
+  p { color: #374151; }
+  .btn { @apply bg-blue-600 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 transition; }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="flex flex-col items-center justify-center text-center bg-blue-50">
+  <h1 class="text-3xl md:text-4xl font-bold mb-2">SoulTalk</h1>
+  <p class="mb-4 max-w-xl text-gray-700">Онлайн-підтримка психолога. Допомагаємо знайти баланс, спокій і впевненість у собі, не виходячи з дому.</p>
+  <a href="#contact" class="btn">Записатися на консультацію</a>
+</section>
+
+<!-- About Section -->
+<section id="about" class="max-w-4xl mx-auto text-center mt-12">
+  <h2 class="text-2xl font-bold mb-2">Про SoulTalk</h2>
+  <p class="mb-2">Сучасна онлайн-платформа для психологічної підтримки. Досвідчені психологи допомагають вирішити життєві труднощі та знайти внутрішню гармонію.</p>
+  <p>Консультації доступні з будь-якого місця та у зручний для вас час.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="max-w-5xl mx-auto text-center mt-12">
+  <h2 class="text-2xl font-bold mb-4">Наші послуги</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-white p-4 rounded shadow">
+      <h4 class="font-semibold mb-1">Індивідуальні консультації</h4>
+      <p>Особисті сесії для вирішення ваших проблем.</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h4 class="font-semibold mb-1">Онлайн-терапія</h4>
+      <p>Сесії через відео або чат — зручно та безпечно.</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h4 class="font-semibold mb-1">Групові сесії</h4>
+      <p>Підтримка у групах з людьми з подібними проблемами.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="max-w-2xl mx-auto text-center mt-12">
+  <h2 class="text-2xl font-bold mb-2">Запис на консультацію</h2>
+  <p class="mb-4 text-gray-700">Залиште свої дані, і ми зв'яжемося з вами для підбору зручного часу консультації з психологом.</p>
+
+  <form action="https://formbold.com/s/oDRmq" method="POST" class="bg-white p-6 rounded shadow space-y-4">
+    <!-- Email -->
+    <input type="email" name="email" placeholder="Email" class="w-full p-2 border rounded" required>
+
+    <!-- Ім'я -->
+    <input type="text" name="subject" placeholder="Ваше ім'я" class="w-full p-2 border rounded" required>
+
+    <!-- Телефон -->
+    <input type="text" name="phone" placeholder="Телефон" class="w-full p-2 border rounded" required>
+
+    <!-- Telegram -->
+    <input type="text" name="telegram" placeholder="Telegram (@username)" class="w-full p-2 border rounded">
+
+    <!-- Кнопка -->
+    <button type="submit" class="w-full btn">Відправити</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white mt-8 p-4 text-center text-gray-600">
+  &copy; 2025 SoulTalk. Всі права захищені.
+</footer>
+
+</body>
+</html>
