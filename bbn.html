@@ -3,84 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Товар - EmpressShop</title>
-  <!-- Іконки Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Власні стилі -->
-  <link rel="stylesheet" href="styles.css">
+  <title>SoulTalk - Онлайн клініка психології</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+    .btn-primary {
+      @apply bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <div class="container flex justify-between items-center">
-      <div class="text-xl font-bold text-primary-900">EmpressShop</div>
-      <div class="text-xl text-primary-600">
-          <a href="https://t.me/Karyeen_1"><i class="fab fa-telegram"></i> Telegram</a>
-      </div>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold text-blue-600">SoulTalk</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-700 hover:text-blue-600">Про нас</a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600">Послуги</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Контакти</a>
+      </nav>
     </div>
   </header>
-  
-  <main>
-    <div class="container">
-      <div class="card">
-        <div class="product-container">
-          <!-- Зображення товару -->
-          <div class="product-image-container">
-            <img 
-              src="https://www.websklad.biz.ua/wp-content/uploads/yrgfsdsdafsd.jpg" 
-              alt="Футболка базова" 
-              class="product-image"
-            >
-          </div>
-          
-          <!-- Інформація про товар -->
-          <div class="flex-col">
-            <div class="product-code">
-              Артикул: ws93469-3 
-            </div>
-            
-            <h1 class="product-name">
-              Бездротові навушники Bluetooth P9 STEREO  RED
-            </h1>
-            
-            <div class="product-price">
-              500 ₴
-            </div>
-            
-            <div class="product-description">
-              <p>Бездротові Bluetooth стерео навушники.</p>
-              <p>Зручне керування на самих навушниках дозволить перемикатися на вхідний дзвінок, пропускати композиції, регулювати гучність або змінювати режими. Ви зможете легко насолоджуватись улюбленою музикою, збереженою на карті пам’яті micro SD. Використання з’єднувального кабелю дозволить використовувати як звичайні дротові навушники. Завдяки вбудованому Bluetooth ви зможете без проводів слухати стереофонічну музику зі свого улюбленого музичного плеєра, мобільного телефону, ПК та будь-якого іншого гаджета. Використовувати їх як бездротову гарнітуру для здійснення дзвінків з мобільного телефону або спілкування в Skype через ПК, просто натисніть кнопку і розмовляйте</p>
-              <h3>Характеристики:</h3>
-              <ul>
-                <li>Тип: бездротові</li>
-                <li>Підключення: Bluetooth 5.0</li>
-                <li>Час роботи: до 4 годин</li>
-                <li>Час зарядки: 1-2 години</li>
-                <li>Відстань дії: до 10 метрів</li>
-                <li>Колір: червоний</li>
-                <li>Матеріал: пластик, метал, поліуретан</li>
-            </div>
-            
-            <div class="product-stock">
-              В наявності
-            </div>
-            
-            <div class="mt-auto">
-              <a href="https://t.me/Karyeen_1" target="_blank" class="btn">
-                <i class="fab fa-telegram"></i> Замовити в Telegram
-              </a>
-            </div>
-          </div>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-20">
+    <div class="container mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-4">SoulTalk - Онлайн психологічна підтримка</h2>
+      <p class="text-gray-700 mb-6">Допомагаємо знайти баланс, спокій та впевненість у собі, не виходячи з дому.</p>
+      <a href="#contact" class="btn-primary">Записатися на консультацію</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div data-aos="fade-right">
+        <img src="https://source.unsplash.com/500x400/?psychology,therapy" alt="Психологія" class="rounded-xl shadow-lg">
+      </div>
+      <div data-aos="fade-left">
+        <h3 class="text-3xl font-bold mb-4">Про SoulTalk</h3>
+        <p class="text-gray-700 mb-4">SoulTalk — це сучасна онлайн-платформа для психологічної підтримки. Ми об'єднуємо досвідчених психологів та психотерапевтів, щоб допомогти вам знайти внутрішню гармонію та вирішити складні життєві ситуації.</p>
+        <p class="text-gray-700">Ми працюємо дистанційно, тому ви можете отримати консультацію в будь-який зручний час та з будь-якого місця.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12" data-aos="fade-up">Наші послуги</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in">
+          <h4 class="text-xl font-semibold mb-2">Індивідуальні консультації</h4>
+          <p class="text-gray-600">Особисті сесії з психологом для вирішення ваших проблем та пошуку ресурсів.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">Терапія онлайн</h4>
+          <p class="text-gray-600">Психотерапевтичні сесії через відеозв'язок або чат — комфортно та безпечно.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <h4 class="text-xl font-semibold mb-2">Групові сесії</h4>
+          <p class="text-gray-600">Підтримка у групах з людьми з подібними проблемами та цілями.</p>
         </div>
       </div>
     </div>
-  </main>
-  
-  <footer>
-    <div class="container">
-      © <span id="currentYear"></span> EmpressShop. Усі права захищено.
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto text-center" data-aos="fade-up">
+      <h3 class="text-3xl font-bold mb-6">Контакти</h3>
+      <p class="text-gray-700 mb-6">Заповніть форму нижче, і ми зв'яжемося з вами для запису на консультацію.</p>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-lg">
+        <input type="text" placeholder="Ваше ім'я" class="w-full mb-4 p-3 border rounded-lg">
+        <input type="email" placeholder="Email" class="w-full mb-4 p-3 border rounded-lg">
+        <textarea placeholder="Ваше повідомлення" class="w-full mb-4 p-3 border rounded-lg"></textarea>
+        <button type="submit" class="btn-primary w-full">Відправити</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-20 py-6">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2025 SoulTalk. Всі права захищені.
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
